@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Inconsolata');
+
+html, body {
+	color: #eee;
+	background: #272822;
+	font-weight: 700;
+	font-size: 21px;
+	height: 100%;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+	font-family: 'Inconsolata', 'Fira Mono', monospace;
+}
+
+/***** NAVBAR ******/
+
+#app {
+	height: 100%;
+}
+
+nav {
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.nav-item {
+	margin: 0 0.2em;
+}
+
+.nav-item a {
+	color: #FD971F;
+}
