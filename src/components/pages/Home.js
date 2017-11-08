@@ -1,14 +1,15 @@
 import React from 'react';
-import PageComponent from '../Page';
+import TitleFormatter from '../TitleFormatter';
 
-class HomePage extends PageComponent {
+class HomePage extends React.Component {
 
 	render() {
-		const titleFormatter = this.titleFormatter.bind(this);
-
 		return (
 			<main className='center'>
-				<h1>{titleFormatter('name', 'Gabriel Alves')}</h1>
+				<h1>
+					<TitleFormatter variable='name'
+								 	content='Gabriel Alves' />
+				</h1>
 			</main>
 		);
 	}

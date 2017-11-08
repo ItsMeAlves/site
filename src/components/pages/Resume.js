@@ -1,13 +1,14 @@
 import React from 'react';
-import PageComponent from '../Page';
+import TitleFormatter from '../TitleFormatter';
 
-class ResumePage extends PageComponent {
+class ResumePage extends React.Component {
 	render() {
-		const titleFormatter = this.titleFormatter.bind(this);
-
 		return (
 			<main className='align-middle'>
-				<h1>{titleFormatter('my', 'resume')}</h1>
+				<h1>
+					<TitleFormatter variable='my'
+									content='resume' />
+				</h1>
 			</main>
 		);
 	}

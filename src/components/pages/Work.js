@@ -1,13 +1,15 @@
 import React from 'react';
-import PageComponent from '../Page';
+import TitleFormatter from '../TitleFormatter';
 
-class WorkPage extends PageComponent {
+class WorkPage extends React.Component {
 	render() {
-		const titleFormatter = this.titleFormatter.bind(this);
 
 		return (
 			<main className='align-middle'>
-				<h1>{titleFormatter('my', 'work')}</h1>
+				<h1>
+					<TitleFormatter variable='my'
+									content='work' />
+				</h1>
 			</main>
 		);
 	}
