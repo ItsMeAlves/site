@@ -6,10 +6,9 @@ import Footer from './Footer';
 class App extends React.Component {
 	render() {
 		return (
-			<div style={{height: '100%'}}>
+			<div>
 				<Header />
-				<div className='container'
-					 style={{height: '100%'}}>
+				<div className='container'>
 					<Body />
 				</div>
 				<Footer />
