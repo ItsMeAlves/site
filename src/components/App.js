@@ -1,17 +1,19 @@
 import React from 'react';
-import Body from './Body';
-import Header from './Header';
-import Footer from './Footer';
+import Welcome from './Welcome';
+import Contact from './Contact';
 
 class App extends React.Component {
 	render() {
+		const appStyle = {
+			display: 'flex',
+			flexFlow: 'column nowrap',
+			justifyContent: 'center'
+		};
+
 		return (
-			<div>
-				<Header />
-				<div className='container'>
-					<Body />
-				</div>
-				<Footer />
+			<div style={appStyle}>
+				<Welcome />
+				<Contact />
 			</div>
 		);
 	}
